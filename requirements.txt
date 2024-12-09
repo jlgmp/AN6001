@@ -1,4 +1,4 @@
 flask
 gunicorn
 textblob
-google
+google-genai
