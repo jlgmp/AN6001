@@ -1,0 +1,14 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Genai result {{r.candidates[0].content.parts[0].text}}</h1>
+        <form action="/main" method="post">
+            <p><input type="submit" value="Main"></p>
+        </form>
+    </div>
+  </body>
