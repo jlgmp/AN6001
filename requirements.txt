@@ -3,3 +3,4 @@ gunicorn
 textblob
 google
 google-cloud
+google-generativeai
