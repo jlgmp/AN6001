@@ -87,7 +87,7 @@
                 await contract.methods.weixin(payer, payee,amount).send({ from: accounts[0]});
             }
             async function transaction() {
-                const result = await contract.methods.check_transaction().call();
+                const result = await contract.methods.view_transaction().call();
                 document.getElementById('view_payer').innerText = "Payer: " + result[0];
                 document.getElementById('view_payee').innerText = "Payee: " + result[1];
                 document.getElementById('view_amount').innerText = "Amount: " + result[2];
